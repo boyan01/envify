@@ -9,7 +9,14 @@ environment:
 
 dependencies:
   envify:
-
+    git:
+      url: https://github.com/techouse/envify.git
+      ref: main
+      path: envify
 dev_dependencies:
   build_runner: ^2.0.0
   envify_generator:
+
+dependency_overrides:
+  envify_generator:
+    path: ../../envify_generator
